@@ -16,7 +16,7 @@ body {
 .main .container {
     padding: 40px;
     background: #fff;
-    box-shadow: 5px 5px 10px 10px #eee;
+    /* box-shadow: 5px 5px 10px 10px #eee; */
 }
 
 .main .container header {
@@ -38,7 +38,7 @@ body {
 }
 
 .container header div {
-    font-size: 20px;
+    font-size: 25px;
     color: hsl(229, 6%, 66%);
     font-weight: normal;
 }
@@ -46,7 +46,7 @@ body {
 .container header div:nth-child(2) {
     font-weight: normal;
     color: hsl(234, 12%, 34%);
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .container .content {
@@ -92,7 +92,7 @@ body {
 }
 
 .mini:nth-child(2) .box:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .mini:nth-child(2) .box:last-child {
@@ -106,7 +106,7 @@ body {
     left: 0;
     background-color: hsl(212, 86%, 64%);
     width: 100%;
-    height: 5px;
+    height: 3px;
 }
 
 .mini:nth-child(1) .box::before {
@@ -116,7 +116,7 @@ body {
     left: 0;
     background-color: hsl(180, 62%, 55%);
     width: 100%;
-    height: 5px;
+    height: 3px;
 }
 
 .mini:nth-child(2) .box:first-child::before {
@@ -126,7 +126,7 @@ body {
     left: 0;
     background-color: hsl(0, 78%, 62%);
     width: 100%;
-    height: 5px;
+    height: 3px;
 }
 
 .mini:nth-child(2) .box:last-child::before {
@@ -136,7 +136,7 @@ body {
     left: 0;
     background-color: hsl(34, 97%, 64%);
     width: 100%;
-    height: 5px;
+    height: 3px;
 }
 
 .mini .box p {
