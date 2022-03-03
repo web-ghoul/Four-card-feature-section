@@ -16,6 +16,7 @@ body {
 .main .container {
     padding: 40px;
     background: #fff;
+    box-shadow: 5px 5px 10px 10px #eee;
 }
 
 .main .container header {
@@ -32,19 +33,20 @@ body {
 
 .container header p {
     font-size: 15px;
+    font-weight: normal;
     color: hsl(229, 6%, 66%);
 }
 
 .container header div {
-    font-size: 25px;
+    font-size: 20px;
     color: hsl(229, 6%, 66%);
-    font-weight: 800;
+    font-weight: normal;
 }
 
 .container header div:nth-child(2) {
-    font-weight: 800;
+    font-weight: normal;
     color: hsl(234, 12%, 34%);
-    font-size: 29px;
+    font-size: 30px;
 }
 
 .container .content {
@@ -54,7 +56,6 @@ body {
     justify-content: center;
     align-items: space-around;
     grid-template-areas: "one", "two three", "four";
-    grid-gap: 10px;
     width: 70%;
     position: relative;
     left: 50%;
@@ -83,19 +84,19 @@ body {
 }
 
 .mini .box {
-    box-shadow: 5px 5px 10px 10px #eee;
-    padding: 40px;
+    box-shadow: 5px 5px 15px 12px #eee;
+    padding: 30px;
     position: relative;
     width: 350px;
     height: 250px;
 }
 
 .mini:nth-child(2) .box:first-child {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .mini:nth-child(2) .box:last-child {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .mini:nth-child(3) .box::before {
