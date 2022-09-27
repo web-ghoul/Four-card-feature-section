@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    height: 120vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .container {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 150px;
+}
+
+header .contain {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    left: 50%;
+    gap: 20px;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+header .contain .head {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header .contain h1 {
+    font-size: 40px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+header .contain h2 {
+    font-size: 40px;
+}
+
+section.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+section.parent .boxes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+section.parent .box {
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 40px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    padding: 25px;
+}
+
+section.parent .boxes .box:first-child {
+    border-color: hsl(0, 78%, 62%);
+}
+
+section.parent .boxes .box:last-child {
+    border-color: hsl(34, 97%, 64%);
+}
+
+section.parent .box:last-child {
+    border-color: hsl(212, 86%, 64%);
+}
+
+section.parent .box .text {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+section.parent .box .text h3 {
+    font-size: 22px;
+}
+
+section.parent .box picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 16px;
+}
+
+@media (max-width:1200px) {
+    body {
+        justify-content: stretch;
+        height: 115vh;
+    }
+    main .container {
+        justify-content: stretch;
+        gap: 40px;
+        padding: 18px 120px;
+    }
+    header .contain {
+        width: 50%;
+        gap: 18px;
+    }
+    header .contain h1 {
+        font-size: 35px;
+    }
+    header .contain h2 {
+        font-size: 35px;
+    }
+    section.parent {
+        gap: 22px;
+    }
+    section.parent .boxes {
+        gap: 22px;
+    }
+    section.parent .box {
+        border-radius: 4px;
+        justify-content: stretch;
+        gap: 35px;
+        border-top: 3px solid hsl(180, 62%, 55%);
+        padding: 22px;
+    }
+    section.parent .box .text {
+        gap: 8px;
+    }
+    section.parent .box .text h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:992px) {
+    body {
+        justify-content: center;
+        height: 110vh;
+    }
+    main .container {
+        justify-content: center;
+        gap: 35px;
+        padding: 16px 100px;
+    }
+    header .contain {
+        width: 70%;
+        gap: 16px;
+    }
+    header .contain h1 {
+        font-size: 30px;
+    }
+    header .contain h2 {
+        font-size: 30px;
+    }
+    section.parent {
+        gap: 20px;
+    }
+    section.parent .boxes {
+        gap: 20px;
+    }
+    section.parent .box {
+        border-radius: 3px;
+        justify-content: center;
+        gap: 30px;
+        border-top: 3px solid hsl(180, 62%, 55%);
+        padding: 20px;
+    }
+    section.parent .box .text {
+        gap: 6px;
+    }
+    section.parent .box .text h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        height: 100vh;
+    }
+    main .container {
+        gap: 30px;
+        padding: 12px 80px;
+    }
+    header .contain {
+        width: 80%;
+        gap: 14px;
+    }
+    header .contain h1 {
+        font-size: 25px;
+    }
+    header .contain h2 {
+        font-size: 25px;
+    }
+    section.parent {
+        gap: 18px;
+        grid-template-columns: none;
+    }
+    section.parent .boxes {
+        gap: 18px;
+    }
+    section.parent .box {
+        justify-content: stretch;
+        gap: 25px;
+        padding: 18px;
+    }
+    section.parent .box .text {
+        gap: 5px;
+    }
+    section.parent .box .text h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
